@@ -1,0 +1,35 @@
+/* src/Header.css */
+.header {
+  background-color: #294170;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.new-task-button {
+  padding: 12px 24px; /* Padding around text */
+  font-size: 16px; /* Font size */
+  border: 2px solid black; /* Bold black border */
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* Text color */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth background and border color transition */
+  margin: 20px 20px 0; /* Margin from top, left, and right */
+}
+
+.new-task-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.new-task-button:active {
+  background-color: #28a745; /* Green on click */
+}
+
+  
+  

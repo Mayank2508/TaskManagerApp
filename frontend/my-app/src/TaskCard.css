@@ -1,0 +1,98 @@
+/* TaskCard.css */
+
+/* TaskCard.css */
+
+.task-card-container {
+  display: flex;
+  flex-direction: column; /* Ensure flex direction is column */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+}
+
+.task-card {
+  flex: 1 0 auto; /* Let cards grow vertically as needed */
+  border: 2px solid #007bff; /* Blue border with increased thickness for bold effect */
+  border-radius: 16px; /* Rounded corners */
+  padding: 20px;
+  margin-top: 20px; /* Margin from top */
+  margin-bottom: 20px; /* Margin from bottom */
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.task-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Slightly enlarge card on hover */
+}
+
+.task-card h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.task-card p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #666;
+}
+
+.task-card .form-group {
+  margin-bottom: 15px;
+}
+
+.task-card input[type="text"],
+.task-card textarea,
+.task-card input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff; /* Blue border with increased thickness for bold effect */
+  border-radius: 8px; /* Rounded corners */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-card input[type="text"]:focus,
+.task-card textarea:focus,
+.task-card input[type="date"]:focus {
+  border-color: #0056b3; /* Darker blue for focus state */
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.25); /* Outline shadow */
+  outline: none;
+}
+
+.task-card label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.task-card input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-card button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #007bff; /* Blue border with increased thickness for bold effect */
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.task-card button:active {
+  background-color: #28a745;
+}
